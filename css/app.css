@@ -1,0 +1,116 @@
+/*Para concretar las medidas que queremos y no nos afecte lo que tienen los navegadores por defecto*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, 
+  *:after {
+    box-sizing: inherit;
+}
+
+/*Globales*/
+
+body { /*Aquí se escribe la fuente para toda la página*/
+  font-family: "Raleway", sans-serif; /*con la coma se separan todos los font family. Si por lo que sea no carga el primero, carga el segundo*/
+}
+
+img {
+  max-width: 100%; /*para que no ocurra el desbordamiento de imágenes. Para que la imagen coja el 100% del contenedor en el que esta*/
+  display: block; /*para que donde haya fotos pille el 100% del contenedor. Por defecto una imagen es inline. De ese modo es elemento de bloque.*/
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", self;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0 0 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*Cabecera*/
+
+header {
+  background-color: white;
+
+}
+
+.div-arriba {
+  width: 100%;
+  background-color: #01b0bf;
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+.div-arriba h4 {
+  color: white;
+  margin-left: 230px;
+  margin-right: 820px;
+}
+
+.sesion {
+  display: flex;
+  color: white;
+  width: 250px;
+  justify-content: flex-end;
+}
+
+.sesion a {
+  color: white;
+  margin: 10px;
+}
+
+
+.imagen-titulo {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+}
+
+.imagen-titulo img {
+  height: 100px;
+  width: 120px;
+}
+
+.imagen-titulo h1 {
+  color: #01b0bf;
+}
+
+
+.contenedor-navegacion {
+  
+  padding-top: 25px;
+}
+
+.nav-principal {
+  background-color: purple;
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0 35px 0; 
+  display: flex; 
+
+  
+}
+
+.separador {
+  border-bottom: 1px solid #01b0bf;
+}
+
+.nav-principal a {
+  margin-left: 30px;
+  color: #01b0bf;
+}
