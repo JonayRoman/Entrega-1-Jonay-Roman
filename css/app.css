@@ -44,7 +44,6 @@ a {
 
 header {
   background-color: white;
-
 }
 
 .div-arriba {
@@ -78,39 +77,171 @@ header {
   width: 75%;
   margin: 0 auto;
   display: flex;
-  align-items: end;
+  align-items: center;
 }
 
 .imagen-titulo img {
   height: 100px;
   width: 120px;
+  margin-right: 15px;
 }
 
 .imagen-titulo h1 {
   color: #01b0bf;
 }
 
+.imagen-titulo .carrito {
+  margin-left: auto; /* Agrega esta línea para empujar el carrito a la izquierda */
+}
+
+.imagen-titulo a {
+  font-size: 20px;
+  color: #01b0bf;
+}
+
+.imagen-titulo .fa-bag-shopping {
+  font-size: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
+}
+
+.imagen-titulo .fa-bag-shopping:hover {
+  font-size: 60px;
+}
+
 
 .contenedor-navegacion {
-  
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 .nav-principal {
-  background-color: purple;
   width: 75%;
   margin: 0 auto;
-  padding: 20px 0 35px 0; 
+  padding: 20px 0 35px 50px; 
   display: flex; 
+}
 
-  
+.nav-principal a {
+  margin-left: 70px;
+  color: #01b0bf;
+}
+
+.nav-principal a:hover {
+  font-size: 20px;
 }
 
 .separador {
   border-bottom: 1px solid #01b0bf;
 }
 
-.nav-principal a {
-  margin-left: 30px;
+/*Seccion inicio*/
+
+.seccion-inicio {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.seccion-inicio h2 {
   color: #01b0bf;
+}
+
+.div-inicio {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /*esto es lo mismo que lo de arriba*/
+  column-gap: 15px;
+}
+
+.productos-inicio:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  background-image: url('../img/Impresora3D.jpg');
+  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
+  background-size: contain; /*para adaptar la imagen al tamaño del contenedor*/
+  background-position: center center;
+  height: 550px;
+}
+
+.productos-inicio:nth-child(2) {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  display: grid;
+}
+
+.inicio-accesorios {
+  background-image: url('../img/accesorios_3D.jpg');
+  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
+  background-size: cover; /*para adaptar la imagen al tamaño del contenedor*/
+  background-position: center center;
+  height: 265px;
+}
+
+.inicio-impresion3D {
+  background-image: url('../img/impresion3D.jpg');
+  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
+  background-size: cover; /*para adaptar la imagen al tamaño del contenedor*/
+  background-position: center center;
+  height: 265px;
+  margin-top: 15px;
+}
+
+.productos-inicio:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: grid;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #01b0bf;
+}
+
+.mejoras {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mejora {
+  display: flex;
+  margin-right: 30px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.mejora:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.mejora:last-child {
+  margin-right: 0;
+}
+
+.mejora-izq {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mejora-izq i {
+  font-size: 50px;
+  color: #00b1bf;
+}
+
+.mejora-der {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mejora-der h3 {
+  font-size: 25px;
+  color: black;
+}
+
+.mejora-der p {
+  font-size: 18px;
+  color: black;
+  width: 70%;
+  margin-top: 10px;
 }
