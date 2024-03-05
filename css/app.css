@@ -1,24 +1,32 @@
 /*Para concretar las medidas que queremos y no nos afecte lo que tienen los navegadores por defecto*/
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, 
-  *:after {
-    box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /*Globales*/
 
-body { /*Aquí se escribe la fuente para toda la página*/
-  font-family: "Raleway", sans-serif; /*con la coma se separan todos los font family. Si por lo que sea no carga el primero, carga el segundo*/
+body {
+  /*Aquí se escribe la fuente para toda la página*/
+  font-family: "Raleway", sans-serif;
+  /*con la coma se separan todos los font family. Si por lo que sea no carga el primero, carga el segundo*/
 }
 
 img {
-  max-width: 100%; /*para que no ocurra el desbordamiento de imágenes. Para que la imagen coja el 100% del contenedor en el que esta*/
-  display: block; /*para que donde haya fotos pille el 100% del contenedor. Por defecto una imagen es inline. De ese modo es elemento de bloque.*/
+  max-width: 100%;
+  /*para que no ocurra el desbordamiento de imágenes. Para que la imagen coja el 100% del contenedor en el que esta*/
+  display: block;
+  /*para que donde haya fotos pille el 100% del contenedor. Por defecto una imagen es inline. De ese modo es elemento de bloque.*/
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", self;
 }
 
@@ -27,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 h3 {
@@ -91,7 +99,8 @@ header {
 }
 
 .imagen-titulo .carrito {
-  margin-left: auto; /* Agrega esta línea para empujar el carrito a la izquierda */
+  margin-left: auto;
+  /* Agrega esta línea para empujar el carrito a la izquierda */
 }
 
 .imagen-titulo a {
@@ -100,7 +109,8 @@ header {
 }
 
 .imagen-titulo .fa-bag-shopping {
-  font-size: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
+  font-size: 50px;
+  /* Ajusta el tamaño del ícono según tus necesidades */
 }
 
 .imagen-titulo .fa-bag-shopping:hover {
@@ -115,8 +125,8 @@ header {
 .nav-principal {
   width: 75%;
   margin: 0 auto;
-  padding: 20px 0 35px 50px; 
-  display: flex; 
+  padding: 20px 0 35px 50px;
+  display: flex;
 }
 
 .nav-principal a {
@@ -145,7 +155,7 @@ header {
 
 .div-inicio {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /*esto es lo mismo que lo de arriba*/
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 15px;
 }
 
@@ -153,10 +163,10 @@ header {
   grid-column-start: 1;
   grid-column-end: 4;
   display: grid;
-  background-image: url('../img/Impresora3D.jpg');
-  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
-  background-size: contain; /*para adaptar la imagen al tamaño del contenedor*/
-  background-position: center center;
+  background-image: url('../img/Imágenes_inicio/Impresora3D.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 550px;
 }
 
@@ -167,17 +177,17 @@ header {
 }
 
 .inicio-accesorios {
-  background-image: url('../img/accesorios_3D.jpg');
-  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
-  background-size: cover; /*para adaptar la imagen al tamaño del contenedor*/
+  background-image: url('../img/Imágenes_inicio/accesorios_3D.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
   height: 265px;
 }
 
 .inicio-impresion3D {
-  background-image: url('../img/impresion3D.jpg');
-  background-repeat: no-repeat; /*Si no ponemos esto, por defecto en una pantalla grande, si la imagen no curre toda la pantalla, se repite la imagen muchas veces hasta llenar toda la imagen*/
-  background-size: cover; /*para adaptar la imagen al tamaño del contenedor*/
+  background-image: url('../img/Imágenes_inicio/impresion3D.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
   height: 265px;
   margin-top: 15px;
@@ -244,4 +254,67 @@ header {
   color: black;
   width: 70%;
   margin-top: 10px;
+}
+
+/*Main*/
+
+.div-main {
+  background-color: #e0dfdf;
+}
+
+.div-main-dentro {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.div-main-dentro h2 {
+  color: #01b0bf;
+}
+
+.articulo-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo-1 h3 {
+  color: #01b0bf;
+}
+
+.novedades {
+  display: flex;
+  overflow-x: auto; /* Agrega un scroll horizontal cuando el contenido excede el ancho del contenedor */
+
+}
+
+.producto-novedad {
+  flex-shrink: 0; /* Evita que los divs se reduzcan automáticamente */
+  width: 300px; /* Ajusta el ancho de cada div hijo según tus necesidades */
+  margin-right: 10px; /* Espacio entre los divs (puedes ajustarlo según tus preferencias) */
+  border: 1px solid #01b0bf;
+}
+
+.producto-novedad:first-child {
+  margin-left: 10px; /* Agrega un margen de 10px al primer div hijo */
+}
+
+.producto-novedad img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del div hijo */
+  height: 280px;
+}
+
+.novedad-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-top: 3px solid #01b0bf;
+}
+
+.novedad-descripcion h4 {
+  margin-bottom: 5px;
+  color: #00b1bf;
+}
+
+.novedad-descripcion-input {
+  display: flex;
 }
