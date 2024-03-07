@@ -64,17 +64,30 @@ header {
   align-items: center;
 }
 
+.div-arriba-dentro {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.div-header-h4 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
 .div-arriba h4 {
   color: white;
-  margin-left: 23rem;
-  margin-right: 82rem;
+  font-size: 1.6rem;
 }
 
 .sesion {
   display: flex;
   color: white;
-  width: 25rem;
   justify-content: flex-end;
+  flex: 1;
 }
 
 .sesion a {
@@ -100,8 +113,13 @@ header {
   color: #01b0bf;
 }
 
-.imagen-titulo .carrito {
+.carrito {
   margin-left: auto;
+  color: #01b0bf;
+}
+
+.carrito i:hover {
+  font-size: 3rem;
 }
 
 .imagen-titulo a {
@@ -122,6 +140,10 @@ header {
 
 .nav-principal a {
   margin-left: 7rem;
+  color: #01b0bf;
+}
+
+.nav-principal i {
   color: #01b0bf;
 }
 
@@ -153,12 +175,32 @@ header {
 .productos-inicio:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 4;
-  display: grid;
   background-image: url('../img/Imágenes_inicio/Impresora3D.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   height: 55rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-inicio-impresora {
+  display: flex;
+  background-color: #01b0bf;
+  justify-content: center;
+  width: 40%;
+  height: 15%;
+  margin: 0 auto;
+  margin-top: 37rem;
+  border: 0.1rem solid black; 
+  border-radius: 10px; 
+  padding: 10px;
+  align-items: center;
+}
+
+.seccion-inicio a {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .productos-inicio:nth-child(2) {
@@ -173,6 +215,22 @@ header {
   background-size: cover;
   background-position: center center;
   height: 26.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-inicio-accesorios {
+  display: flex;
+  background-color: #01b0bf;
+  justify-content: center;
+  width: 45%;
+  height: 23%;
+  margin: 0 auto;
+  margin-top: 18rem;
+  border: 0.1rem solid black; 
+  border-radius: 10px; 
+  padding: 10px;
+  align-items: center;
 }
 
 .inicio-impresion3D {
@@ -182,6 +240,8 @@ header {
   background-position: center center;
   height: 26.5rem;
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .productos-inicio:nth-child(3) {
@@ -271,29 +331,29 @@ header {
   color: #01b0bf;
 }
 
-.novedades {
+.div-articulos {
   display: flex;
   overflow-x: auto; /* Agrega un scroll horizontal cuando el contenido excede el ancho del contenedor */
 
 }
 
-.producto-novedad {
+.div-articulos-producto {
   flex-shrink: 0; /* Evita que los divs se reduzcan automáticamente */
   width: 30rem; /* Ajusta el ancho de cada div hijo según tus necesidades */
   margin-right: 1rem; /* Espacio entre los divs (puedes ajustarlo según tus preferencias) */
   border: 0.1rem solid #01b0bf;
 }
 
-.producto-novedad:first-child {
+.div-articulos-producto:first-child {
   margin-left: 1rem; /* Agrega un margen de 10px al primer div hijo */
 }
 
-.producto-novedad img {
+.div-articulos-producto img {
   width: 100%; /* Asegura que la imagen ocupe todo el ancho del div hijo */
   height: 28rem;
 }
 
-.novedad-descripcion {
+.producto-descripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -301,7 +361,7 @@ header {
   border-top: 0.3rem solid #01b0bf;
 }
 
-.novedad-descripcion h4 {
+.producto-descripcion a {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   color: #00b1bf;
@@ -309,14 +369,14 @@ header {
   font-size: 2.4rem;
 }
 
-.novedad-descripcion-input {
+.producto-descripcion-input {
   margin-top: 0.5rem;
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
 }
 
-.novedad-descripcion-input input {
+.producto-descripcion-input input {
   display: inline-block;
   height: 40px;
   background-color: #00b1bf; /* Color de fondo del botón */
@@ -330,7 +390,7 @@ header {
   margin-left: 2rem;
 }
 
-.novedad-descripcion-input p {
+.producto-descripcion-input p {
   color: #01b0bf;
   font-family: "Anton";
   font-size: 2.4rem;
@@ -364,7 +424,7 @@ header {
 /*Formulario*/
 
 .formulario {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -395,18 +455,64 @@ header {
 
 #foto-catalogo img {
   border-radius: 50%;
-  width: 30rem; /* Ajusta el ancho según tus necesidades */
-  height: 30rem; /* Ajusta la altura según tus necesidades */
+  width: 30rem; 
+  height: 30rem; 
+  margin-right: 1.5rem;
 }
-
 
 #inputs-catalogo {
   flex: 2;
 }
+
 #inputs-catalogo h4 {
   margin-top: 0.5rem;
   color: #01b0bf;
   font-size: 2rem;
+}
+
+.div-nombre-apellido, .div-email, .div-empresa, .div-comprador {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.div-comprador {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-comprador label {
+  margin-bottom: 1rem;
+}
+
+.div-radios input {
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: red;
+}
+
+.div-radios label {
+  display: inline-block;
+  margin-right: 1px; /* Ajusta el espacio entre los radio buttons y el texto */
+}
+
+label {
+  font-size: 1.8rem;
+  color: #01b0bf;
+  margin-right: 0.5rem;
+}
+
+#campo-nombre {
+  margin-right: 6rem;
+}
+
+input {
+  height: 2.5rem;
+  width: 15rem;
+}
+
+.div-empresa {
+  margin-left: 0.5rem;
 }
 
 /*Footer*/
@@ -431,6 +537,12 @@ footer {
 
 .contenedor-footer h3 {
   font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.contenedor-footer img {
+  margin-top: 1.5rem;
+  width: 80%;
 }
 
 .logo-footer {
@@ -444,6 +556,10 @@ footer {
   margin-right: 1rem;
 }
 
+#img-calidad {
+  width: 50%;
+}
+
 .logo-footer h1 {
   color: #01b0bf;
   font-size: 2.5rem;
@@ -455,5 +571,49 @@ footer {
 }
 
 .texto-footer p {
-  line-height: 2.5; /* Puedes ajustar este valor según tus necesidades */
+  line-height: 2;
 }
+
+.contenedor-footer h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.enlaces-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.div-footer-abajo {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.div-footer-p {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.div-footer-p p, .enlaces-footer-abajo a {
+  color: white;
+  font-size: 1.3rem;
+  align-items: center;
+}
+
+.enlaces-footer-abajo {
+  display: flex;
+  align-items: center;
+  margin-left: 12rem;
+}
+
+.enlaces-footer-abajo a {
+  margin-left: 2.5rem;
+}
+
