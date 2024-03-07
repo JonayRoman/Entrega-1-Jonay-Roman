@@ -393,23 +393,37 @@
                             <div class="div-comprador">
                                 <label for="campo-comprador">*¿Has comprado anteriormente algún producto en Román's Print?</label>
                                 <div class="div-radios">
-                                    <input type="radio" name="campo-comprador" value="si" checked="checked">Sí
-                                    <input type="radio" name="campo-comprador" value="no">No
+                                    <div class="div-radios-izq">
+                                        <label class="campo-comprador-label" for="campo-comprador">Si</label>
+                                        <input class="campo-comprador-input" type="radio" name="campo-comprador" value="si" checked="checked">
+                                    </div>
+                                    <div class="div-radios-der">
+                                        <label class="campo-comprador-label" for="campo-comprador">No</label>
+                                        <input class="campo-comprador-input" type="radio" name="campo-comprador" value="no">
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            
-                            <label for="campo-uso">*Uso que se le quiere dar a nuestros productos:</label>
-                            <select id="campo-uso" name="uso">
-                                <option value="personal" selected="mayor_18">Un uso personal</option>
-                                <option value="laboral">Un uso laboral</option>
-                                <option value="educativo">Un uso educativo</option>
-                            </select><br>
-                            <label for="campo-info">Información adicional:</label><br>
-                            <textarea name="campo-info" cols="50"
-                                rows="10">Escribe aquí todas las dudas o preguntas que quieras trasladarnos</textarea><br>
-                            <input type="checkbox" name="condiciones" id="aceptar-condiciones">
-                            <label for="aceptar-condiciones">*He leído y aceptado el apartado de <a href="#">información
+                            <div class="div-campo-uso">
+                                <label for="campo-uso">*Uso que se le quiere dar a nuestros productos:</label>
+                                <div class="div-campo-uso-select">
+                                    <select id="campo-uso" name="uso">
+                                        <option value="personal" selected="mayor_18">Un uso personal</option>
+                                        <option value="laboral">Un uso laboral</option>
+                                        <option value="educativo">Un uso educativo</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="div-info-extra">
+                                <label for="campo-info">Información adicional:</label><br>
+                                <textarea name="campo-info" cols="42"
+                                    rows="10">Escribe aquí todas las dudas o preguntas</textarea>
+                            </div>
+                            <div class="div-condiciones">
+                                <label for="aceptar-condiciones">*He leído y aceptado el apartado de <a href="#">información
                                     legal</a></label><br>
+                                <input type="checkbox" name="condiciones" id="aceptar-condiciones">
+                            </div>
                             <input type="submit">
                         </div>
                     </div>

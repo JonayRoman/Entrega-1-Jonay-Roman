@@ -470,7 +470,7 @@ header {
   font-size: 2rem;
 }
 
-.div-nombre-apellido, .div-email, .div-empresa, .div-comprador {
+.div-nombre-apellido, .div-email, .div-empresa, .div-comprador, .div-campo-uso, .div-info-extra, .div-condiciones {
   margin-bottom: 2rem;
   display: flex;
   align-items: flex-start;
@@ -479,21 +479,28 @@ header {
 .div-comprador {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
-.div-comprador label {
-  margin-bottom: 1rem;
+.div-radios {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  
 }
 
-.div-radios input {
-  height: 2rem;
-  margin-right: 1rem;
-  background-color: red;
+.div-radios-der {
+  flex: 1;
+  background-color: blue;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.div-radios label {
-  display: inline-block;
-  margin-right: 1px; /* Ajusta el espacio entre los radio buttons y el texto */
+.div-radios-izq {
+  flex: 1;
+  background-color: purple;
+  display: flex;
+  justify-content: flex-start;
 }
 
 label {
@@ -506,13 +513,30 @@ label {
   margin-right: 6rem;
 }
 
-input {
+input, #campo-uso {
   height: 2.5rem;
   width: 15rem;
+  font-size: 1.5rem;
 }
 
 .div-empresa {
   margin-left: 0.5rem;
+}
+
+.div-campo-uso {
+  display: flex;
+}
+
+#campo-uso option, textarea {
+  font-size: 1.5rem;
+}
+
+.div-condiciones a {
+  text-decoration: underline;
+}
+
+#aceptar-condiciones {
+  margin-left: -5.5rem;
 }
 
 /*Footer*/
