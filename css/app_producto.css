@@ -296,19 +296,101 @@ header {
     font-size: 2.5rem;
     color: #01b0bf;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .datos-foto {
     display: flex;
+    height: 36rem;
 }
 
 .lista-datos {
     flex: 60%;
-    background-color: red;
 }
 
-.datos-foto img {
+.lista-datos li {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.datos-extra-foto {
     flex: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.datos-extra-foto img {
+    height: 100%;
+    width: 60%;
+}
+
+/*Caracteristicas tablas*/
+
+.caracteristicas-tablas {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.caracteristicas-tablas h2 {
+    color: #01b0bf;
+}
+
+.tablas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.articulo-tabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.articulo-tabla h3 {
+    color: #01b0bf;
+}
+
+.tabla {
+    margin-top: 1rem;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+.tabla tr {
+    height: 4.5rem;
+    font-size: 1.8rem;
+}
+
+.tabla td {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    /*NO VAAAAAAAAAAAAAAAA*/
+}
+
+.fila-oscura {
+    background-color: rgb(146, 140, 140);
+}
+
+.fila-clara {
+    background-color: #ddd8d8;
+}
+
+#cama-caliente {
+    margin-top: 2rem;
+}
+
+.div-imagen-tabla {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 70%;
+}
+
+.div-imagen-tabla img {
+    height: 90%;
 }
 
 /*Footer*/
