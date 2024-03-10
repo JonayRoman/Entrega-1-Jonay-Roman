@@ -149,7 +149,7 @@ header {
     font-size: 2rem;
 }
 
-/*Nombre del producto*/
+*Nombre del producto*/
 
 .seccion-arriba {
     width: 100%;
@@ -167,7 +167,7 @@ header {
     align-items: center;
 }
 
-#nombre-producto {
+#nombre-pagina {
     font-family:'Franklin Gothic Medium';
     font-size: 3rem;
 }
@@ -182,211 +182,21 @@ header {
     justify-content: flex-end;
 }
 
-/*Foto y datos iniciales*/
-.producto-imagen-precio {
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-}
-
-.producto-imagen {
-    flex: 40%;
-    display: flex;
-    justify-content:center;
-}
-
-.producto-imagen img {
-    width: 75%;
-}
-
-.producto-precio {
-    flex: 60%;
-    display: flex;
-    flex-direction: column;
-    border: 0.2rem solid #01b0bf;
-    padding: 1.5rem;
-}
-
-.descripcion-producto h2 {
-    margin-top: 0;
-    color: #01b0bf;
-}
-
-.descripcion-producto p {
-    font-size: 2rem;
-}
-
-#garantia {
-    font-weight: bold;
-}
-
-.precio-del-producto h3 {
-    margin-bottom: 3rem;
-    color: #01b0bf;
-    font-size: 3.2rem;
-}
-
-.carrito {
-    display: flex;
-    height: 3.5rem;
-    justify-content: center;
-}
-
-.carrito-input {
-    height:100%;
-    width: 20%;
-    background-color: #01b0bf;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-}
-
-.mas-menos {
-    display: flex;
-    width: 20%;
-}
-
-.mas-meons-input {
-    height:100%;
-    width: 40%;
-    background-color: white;
-    border: 0.1rem solid #01b0bf;
-    font-size: 2.5rem;
-    color: #01b0bf;
-}
-
-.mas-menos-text {
-    height:100%;
-    width: 40%;
-    border: 0.1rem solid #01b0bf;
-    font-size: 2rem;
-    text-align: center;
-}
-
 /*Main*/
 
-/*Descripcion del producto*/
-
-.seccion-descripcion-producto {
+.main-productos {
     width: 75%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
 }
 
-.seccion-descripcion-producto h3 {
-   color: #01b0bf; 
+.filtros {
+    flex: 30%;
+    border-right: solid black;
 }
 
-.seccion-descripcion-producto p {
-    font-size: 2rem;
-}
-
-.subtitulo {
-    margin-bottom: 0;
-}
-
-/*Datos extra*/
-
-.datos-extra h4 {
-    font-size: 2.5rem;
-    color: #01b0bf;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.datos-foto {
-    display: flex;
-    height: 36rem;
-}
-
-.lista-datos {
-    flex: 60%;
-}
-
-.lista-datos li {
-    font-size: 2rem;
-    margin-top: 2rem;
-}
-
-.datos-extra-foto {
-    flex: 40%;
-    display: flex;
-    justify-content: center;
-}
-
-.datos-extra-foto img {
-    height: 100%;
-    width: 60%;
-}
-
-/*Caracteristicas tablas*/
-
-.caracteristicas-tablas {
-    width: 75%;
-    margin: 0 auto;
-}
-
-.caracteristicas-tablas h2 {
-    color: #01b0bf;
-}
-
-.tablas {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
-}
-
-.articulo-tabla {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.articulo-tabla h3 {
-    color: #01b0bf;
-}
-
-.tabla {
-    margin-top: 1rem;
-    width: 70%;
-    border-collapse: collapse;
-}
-
-.tabla tr {
-    height: 4.5rem;
-    font-size: 1.8rem;
-}
-
-.tabla td {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;    /*NO VAAAAAAAAAAAAAAAA*/
-}
-
-.fila-oscura {
-    background-color: rgb(146, 140, 140);
-}
-
-.fila-clara {
-    background-color: #ddd8d8;
-}
-
-#cama-caliente {
-    margin-top: 2rem;
-}
-
-.div-imagen-tabla {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 70%;
-}
-
-.div-imagen-tabla img {
-    height: 90%;
+.productos {
+    flex: 70%;
 }
 
 /*Footer*/
@@ -491,5 +301,3 @@ footer {
 .enlaces-footer-abajo a {
     margin-left: 2.5rem;
 }
-  
-  
