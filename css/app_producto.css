@@ -474,6 +474,7 @@ footer {
     width: 75%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
   
 .div-footer-p p, .enlaces-footer-abajo a {
@@ -485,7 +486,7 @@ footer {
 .enlaces-footer-abajo {
     display: flex;
     align-items: center;
-    margin-left: 12rem;
+
 }
   
 .enlaces-footer-abajo a {

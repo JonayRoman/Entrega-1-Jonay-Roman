@@ -303,6 +303,59 @@ header {
     font-size: 2rem;
 }
 
+/*main-filtros*/
+
+.filtros h4 {
+    font-size: 1.8rem;
+}
+
+.div-filtros {
+    display: flex;
+    align-items: flex-start;
+}
+
+.div-filtros p {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.div-filtros input {
+    width: 12rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.input-texto {
+    margin-right: 2rem;
+}
+
+#input-filtro-nombre {
+    width: 22rem;
+}
+
+.div-filtros {
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.div-filtros ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.div-filtros li {
+    margin-bottom: 3.5rem;
+
+}
+
+#impresoras-3D-tipos {
+    margin-top: 2rem;
+    padding-left: 4rem;
+    font-size: 1.4rem;
+}
 
 /*Footer*/
 
@@ -389,6 +442,7 @@ footer {
     width: 75%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
 }
   
 .div-footer-p p, .enlaces-footer-abajo a {
@@ -400,9 +454,10 @@ footer {
 .enlaces-footer-abajo {
     display: flex;
     align-items: center;
-    margin-left: 12rem;
+
 }
   
 .enlaces-footer-abajo a {
     margin-left: 2.5rem;
 }
+  

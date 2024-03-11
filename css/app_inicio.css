@@ -13,16 +13,12 @@ html {
 /*Globales*/
 
 body {
-  /*Aquí se escribe la fuente para toda la página*/
   font-family: "Raleway", sans-serif;
-  /*con la coma se separan todos los font family. Si por lo que sea no carga el primero, carga el segundo*/
 }
 
 img {
   max-width: 100%;
-  /*para que no ocurra el desbordamiento de imágenes. Para que la imagen coja el 100% del contenedor en el que esta*/
   display: block;
-  /*para que donde haya fotos pille el 100% del contenedor. Por defecto una imagen es inline. De ese modo es elemento de bloque.*/
 }
 
 h1,
@@ -543,6 +539,7 @@ input, #campo-uso {
 
 footer {
   background-color: #f5f5f5;
+  margin-top: 2rem;
 }
 
 .div-footer {
@@ -623,6 +620,7 @@ footer {
   width: 75%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .div-footer-p p, .enlaces-footer-abajo a {
@@ -634,10 +632,9 @@ footer {
 .enlaces-footer-abajo {
   display: flex;
   align-items: center;
-  margin-left: 12rem;
+
 }
 
 .enlaces-footer-abajo a {
   margin-left: 2.5rem;
 }
-

@@ -44,7 +44,7 @@
 
     <div class="contenedor-navegacion">
         <nav class="nav-principal">
-            <a href="index.html"> <i class="fa-solid fa-play"></i> Inicio
+            <a href="index_inicio.html"> <i class="fa-solid fa-play"></i> Inicio
                 <i class="fa-solid fa-chevron-down"></i></a>
             <a href="#"><i class="fa-regular fa-address-card"></i> Sobre
                 Nosotros</a>
@@ -76,7 +76,42 @@
     <main class="main-productos">
 
         <section class="filtros">
-            <P>HOLAAAAAA</P>
+            <div class="filtro-precio">
+                <h4>| Filtrar por precio</h4>
+                <div class="div-filtros">
+                    <p>Precio: 0€ - 20.000€</p>
+                    <input type="text" class="input-texto">
+                    <input type="submit" value="Filtrar" class="input-filtrar">
+                </div>
+            </div>
+            <div class="filtro-nombre">
+                <h4>| Filtrar por nombre</h4>
+                <div class="div-filtros">
+                    <p>Buscar: </p>
+                    <input type="text" id="input-filtro-nombre">
+                </div>
+            </div>
+            <div class="filtro-producto">
+                <h4>| Filtrar por producto</h4>
+                <div class="div-filtros">
+                    <ul>
+                        <li> <a href="#">Repuestos para impresoras 3D</a></li>
+                        <li> <a href="#">Ofertas</a></li>
+                        <li> <a href="#">Repuestos para impresoras 3D</a></li>
+                        <li> <a href="#">Resinas</a></li>
+                        <li>Impresoras 3D
+                            <ul id="impresoras-3D-tipos">
+                                <li> <a href="#"><strong>Impresoras 3D Industriales</strong></a></li>
+                                <li> <a href="#">Impresoras 3D Creality</a></li>
+                                <li> <a href="#">Impresoras 3D Ultimaker</a></li>
+                                <li> <a href="#">Impresoras 3D BCN3D</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Recambios de impresoras 3D</a></li>
+                        <li> <a href="#">Filamento impresoras 3D</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="productos">
