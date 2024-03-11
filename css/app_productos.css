@@ -13,9 +13,7 @@ html {
 /*Globales*/
 
 body {
-    /*Aquí se escribe la fuente para toda la página*/
     font-family: "Raleway", sans-serif;
-    /*con la coma se separan todos los font family. Si por lo que sea no carga el primero, carga el segundo*/
 }
   
 img {
@@ -41,11 +39,19 @@ h3 {
     font-size: 3rem;
     margin: 0 0 0.5rem 0;
 }
+
+h4 {
+    font-size: 2.5rem;
+}
   
 a {
     text-decoration: none;
     color: #000;
     font-size: 1.6rem;
+}
+
+p {
+    font-size: 2rem;
 }
   
 /*Cabecera*/
@@ -149,7 +155,7 @@ header {
     font-size: 2rem;
 }
 
-*Nombre del producto*/
+/*Nombre del sitio*/
 
 .seccion-arriba {
     width: 100%;
@@ -192,12 +198,111 @@ header {
 
 .filtros {
     flex: 30%;
-    border-right: solid black;
+    border-right: 0.2rem solid black;
 }
 
 .productos {
     flex: 70%;
 }
+
+.descripcion {
+    margin-left: 2.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.ordenar-productos {
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    display: flex;
+    height: 4rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.div-campo-orden-select {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.todos-los-productos {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+}
+
+.todos-los-productos p {
+    font-size: 1.5rem;
+}
+
+#campo-orden {
+    height: 50%;
+}
+
+/*Main-productos*/
+
+.vista-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    margin-left: 2.5rem;
+}
+
+.vista-productos img {
+    height: 20rem;
+    width: 100%;
+}
+
+.producto-individual {
+    margin-bottom: 0.5rem;
+}
+
+.nombre-precio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.nombre-precio a {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.nombre-precio h4 {
+    margin-top: 1.5rem;
+}
+
+#h4-precio {
+    color: #01b0bf;
+}
+
+/*main-cambio-pagina*/
+
+.cambio-pagina {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cuadrado {
+    border: 0.1rem solid black;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#cuadrado-1 {
+    background-color: #cec1c1;
+}
+
+.cuadrado a {
+    font-size: 2rem;
+}
+
 
 /*Footer*/
 
