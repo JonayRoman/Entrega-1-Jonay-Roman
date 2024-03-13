@@ -1070,13 +1070,28 @@ input, #campo-uso {
     margin-top: 0.5rem;
     color: #01b0bf;
     font-size: 1.7rem;
-    width: 60%;
+    width: 90%;
   }
   
-  .div-nombre-apellido, .div-email, .div-empresa, .div-comprador, .div-campo-uso, .div-info-extra, .div-condiciones {
+  .div-nombre-apellido,  .div-email, .div-empresa,  .div-empresa, .div-campo-uso, .div-info-extra {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-condiciones {
     margin-bottom: 2rem;
     display: flex;
     align-items: flex-start;
+    width: 30rem;
+  }
+
+  .div-condiciones label {
+    flex: 200%; 
+    margin-right: 5rem;
+  }
+
+  .div-condiciones input {
+    margin-left: 5rem;
   }
   
   .div-comprador {
@@ -1084,7 +1099,15 @@ input, #campo-uso {
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
+  .label-comprador {
+    width: 30rem;
+  }
+
+  #campo-nombre {
+    margin-bottom: 1rem;
+  }
+
   .div-radios {
     width: 100%;
     display: flex;
@@ -1092,28 +1115,14 @@ input, #campo-uso {
     
   }
   
-  .div-radios-der {
-    flex: 1;
-    background-color: blue;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
   .div-radios-izq {
-    flex: 1;
-    background-color: purple;
-    display: flex;
-    justify-content: flex-start;
+    margin-right: -3rem;
   }
   
   label {
     font-size: 1.8rem;
     color: #01b0bf;
-    margin-right: 0.5rem;
-  }
-  
-  #campo-nombre {
-    margin-right: 6rem;
+    margin-bottom: 1rem;
   }
   
   input, #campo-uso {
@@ -1122,24 +1131,18 @@ input, #campo-uso {
     font-size: 1.5rem;
   }
   
-  .div-empresa {
-    margin-left: 0.5rem;
-  }
-  
   .div-campo-uso {
-    display: flex;
+    width: 30rem;
+    align-items: flex-start;
   }
-  
-  #campo-uso option, textarea {
-    font-size: 1.5rem;
-  }
-  
-  .div-condiciones a {
-    text-decoration: underline;
-  }
-  
-  #aceptar-condiciones {
-    margin-left: -5.5rem;
+
+  textarea[name="campo-info"] {
+    width: 30rem; 
+    height: 20rem; 
+}
+
+  #boton-enviar {
+    margin-left: -7rem;
   }
 }
 
@@ -1161,10 +1164,9 @@ footer {
 /*Estilos para los tres contenedores del footer, donde esncuentran los enlaces y demas*/
 .contenedor-footer {
   display: flex;
-  flex-direction: column;
-  padding: 0;
-  flex: 1;
-  margin: 1rem;
+  flex-direction:column;
+  width: 30rem;
+  margin-left: 8rem;
 }
 
 /*Tamaño y posicion de los titulos h3 */
@@ -1225,6 +1227,52 @@ footer {
   margin-top: 1.5rem;
 }
 
+@media (min-width:768px) and (max-width:1278px) {
+  .div-footer {
+    width: 85%;
+  }
+  
+  .contenedor-footer {
+    width: 40rem;
+    margin-left: 0.1rem;
+  }
+
+  .texto-footer {
+    width: 85%;
+  }
+
+  .logo-footer h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo-footer img {
+    height: 4.5rem;
+    width: 5.5rem;
+  }
+}
+
+@media (max-width:767px) {
+  .div-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .contenedor-footer {
+    display: flex;
+    flex-direction:column;
+    width: 30rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .texto-footer {
+    width: 85%;
+  }
+}
+
+/*Footer de abajo del todo de la pagina*/
+
 /*Estilos para el div donde esta la informacion de abajo del todo de la pagina*/
 .div-footer-abajo {
   background-color: black;
@@ -1259,4 +1307,33 @@ footer {
 /*Meter margen entre los dos enlaces*/
 .enlaces-footer-abajo a {
   margin-left: 2.5rem;
+}
+
+/*Tamaño y forma del contenedor de abajo del todo del footer cuando la longitud horizontal de la pantalla es de entre 768 y 1278px*/
+@media (min-width:768px) and (max-width:1278px) {
+
+  .div-footer-abajo {
+    height: 7rem;
+  }
+
+  .div-footer-p {
+    width: 85%;
+  }
+}
+
+/*Tamaño y forma del contenedor de abajo del todo del footer cuando la longitud horizontal de la pantalla es de 767px*/
+@media (max-width:767px) {
+
+  .div-footer-abajo {
+    height: 12rem;
+  }
+
+  .div-footer-p {
+    width: 90%;
+    display: block;
+  }
+
+  .enlaces-footer-abajo a {
+    margin-top: 1rem;
+  }
 }
