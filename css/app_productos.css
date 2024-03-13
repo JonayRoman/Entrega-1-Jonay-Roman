@@ -1,9 +1,10 @@
 /*Para concretar las medidas que queremos y no nos afecte lo que tienen los navegadores por defecto*/
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /*1rem son 10 pixeles*/
+    font-size: 62.5%;
+    /*1rem son 10 pixeles*/
 }
-  
+
 *,
 *:before,
 *:after {
@@ -12,54 +13,85 @@ html {
 
 /*Globales*/
 
+/*El tipo de letra para todo el body de la pagina web*/
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: sans-serif;
 }
-  
+
+/*Para que las imagenes no se extiendan mas que el ancho del su respectivo contenedor*/
 img {
     max-width: 100%;
-    /*para que no ocurra el desbordamiento de imágenes. Para que la imagen coja el 100% del contenedor en el que esta*/
     display: block;
-    /*para que donde haya fotos pille el 100% del contenedor. Por defecto una imagen es inline. De ese modo es elemento de bloque.*/
 }
-  
-h1, h2, h3 {
-    font-family: "Playfair Display", self;
+
+/*El tipo de letra para todos lod h1, h2 y h3 de la pagina web*/
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
 }
-  
+
+/*El tamaño de letra de los h1 para los 3 tipos de medida*/
 h1 {
     font-size: 5rem;
 }
-  
+
+@media (min-width:768px) and (max-width:1278px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/*Tamaño de letra de los h2 de la pagina*/
 h2 {
     font-size: 3.5rem;
 }
-  
+
+/*Tamaño de letra de los h3 de la pagina*/
 h3 {
     font-size: 3rem;
     margin: 0 0 0.5rem 0;
 }
 
+/*Tamaño de letra de los h4 de la pagina*/
 h4 {
     font-size: 2.5rem;
 }
-  
+
+/*Tamaño de letra de las etiquetas "p" de la pagina*/
+p {
+    font-size: 2rem;
+}
+
+/*Quitar el subrayado, poner la letra en negro y dar tamaño de letra a todos los enlaces para los 3 tipos de medida*/
 a {
     text-decoration: none;
     color: #000;
     font-size: 1.6rem;
 }
 
-p {
-    font-size: 2rem;
+@media (min-width:768px) and (max-width:1278px) {
+    a {
+        font-size: 1.5rem;
+    }
 }
-  
-/*Cabecera*/
-  
+
+/*HEADER*/
+
+/*Parte de arriba*/
+
+/*Darle el color a todo el header*/
 header {
     background-color: white;
 }
-  
+
+/*Estilos del div de arriba del todo, donde se registra o inicia sesion*/
 .div-arriba {
     width: 100%;
     background-color: #01b0bf;
@@ -67,92 +99,235 @@ header {
     height: 4rem;
     align-items: center;
 }
-  
+
+/*Estilos del div de arriba del todo, donde se registra o inicia sesion, pero un div hijo mas corto*/
 .div-arriba-dentro {
     height: 100%;
     width: 75%;
     margin: 0 auto;
     display: flex;
 }
-  
+
+/*Estilos del div donde se situa el titulo h4 de la izquierda del todo*/
 .div-header-h4 {
     height: 100%;
     display: flex;
     align-items: center;
     flex: 3;
 }
-  
+
+/*Estilos del titulo h4 de la izquierda del todo*/
 .div-arriba h4 {
     color: white;
     font-size: 1.6rem;
 }
-  
+
+/*Estilos del contendor donde van los enlaces de inicio de sesion y registrarse*/
 .sesion {
     display: flex;
     color: white;
     justify-content: flex-end;
     flex: 1;
 }
-  
+
+/*Estilos para cuando se accede a la pagina desde una pantalla mas pequeña, entre 768 y 1278px en horizontal*/
+@media (min-width:768px) and (max-width:1278px) {
+
+    .div-arriba-dentro {
+        width: 80%;
+    }
+
+    .div-header-h4 {
+        flex: 60%;
+    }
+
+    .sesion {
+        flex: 40%;
+    }
+}
+
+/*Estilos para cuando se accede a la pagina desde una pantalla mas pequeña, de menos de 767px en horizontal*/
+@media (max-width:767px) {
+
+    .div-arriba {
+        height: 8rem;
+    }
+
+    .div-arriba-dentro {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-header-h4 {
+        height: 50%;
+    }
+
+    .sesion {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/*Estilos para los enlaces de iniciar sesion y registrarse*/
 .sesion a {
     color: white;
     margin: 1rem;
 }
-  
-  
+
+/*Logo y carro*/
+
+/*Estilos para el div donde estan el logo, el nombre y el carrito de la compra*/
 .imagen-titulo {
     width: 75%;
     margin: 0 auto;
     display: flex;
     align-items: center;
 }
-  
+
+/*Estilos para el logo de la empresa*/
 .imagen-titulo img {
     height: 10rem;
     width: 12rem;
     margin-right: 1.5rem;
 }
-  
+
+/*Dar color al titulo h1*/
 .imagen-titulo h1 {
     color: #01b0bf;
 }
-  
+
+/*Estilos para el enlace de compra y el logo del carrito*/
 .carrito {
     margin-left: auto;
     color: #01b0bf;
 }
-  
+
+/*Estilo para que, cuando se ponga el raton encima del logo del carrito, este se haga mas grande*/
 .carrito i:hover {
     font-size: 3rem;
 }
-  
+
+/*Estilos para el enlace de tu compra*/
 .imagen-titulo a {
     font-size: 2rem;
     color: #01b0bf;
 }
-  
+
+/*Estilos para ver el logo, el titulo h1 y el carrito diferente cuando la longitud de la pantalla sea de entre 768px y 1278px*/
+@media (min-width:768px) and (max-width:1278px) {
+    .imagen-titulo {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
+
+/*Estilos para ver el logo, el titulo h1 y el carrito diferente cuando la longitud de la pantalla sea de menos de 767px*/
+@media (max-width:767px) {
+    .imagen-titulo {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .carrito {
+        margin-left: auto;
+        color: #01b0bf;
+        margin-top: 0.1rem;
+        text-align: center;
+    }
+
+    .imagen-titulo img {
+        height: 8rem;
+        width: 10rem;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .carrito a {
+        display: none;
+    }
+}
+
+/*Enlaces de navegacion*/
+
+/*Dar separacion entre el logo y titulo, con respecto a los enlaces*/
 .contenedor-navegacion {
     padding-top: 1rem;
 }
-  
+
+/*Estilos para el nav donde estan todos los enlaces*/
 .nav-principal {
     width: 75%;
     margin: 0 auto;
-    padding: 2rem 0 3.5rem 5rem;
+    padding: 2rem 0 3.5rem 7rem;
     display: flex;
 }
-  
+
+/*Estilos para los enlaces de dentro del nav*/
 .nav-principal a {
-    margin-left: 7rem;
+    margin-left: 3.5rem;
     color: #01b0bf;
 }
-  
+
+/*Estilos para los logos situados a la derecha de cada enlace*/
 .nav-principal i {
     color: #01b0bf;
 }
-  
+
+/*Hacer los enlaces mas grandes cuando el raton se queda parado encima de cada uno de ellos*/
 .nav-principal a:hover {
     font-size: 2rem;
+}
+
+/*Poner un borde que separe el header y los enlaces con el contenido de esta pagina en concreto*/
+.separador {
+    border-bottom: 0.1rem solid #01b0bf;
+}
+
+/*Estilos para los enlaces cuando la longitud horizontal de la pantalla esta entre 768px y 1278px*/
+@media (min-width:768px) and (max-width:1278px) {
+    .nav-principal {
+        width: 80%;
+        padding: 2rem 0 3.5rem 0;
+    }
+
+    .nav-principal a {
+        margin-left: 1rem;
+    }
+
+    .nav-principal i {
+        display: none;
+    }
+}
+
+/*Estilos para los enlaces cuando la longitud horizontal de la pantalla ees de 767px*/
+@media (max-width:767px) {
+
+    .contenedor-navegacion {
+        overflow-x: hidden;
+    }
+
+    .nav-principal {
+        width: 90%;
+        padding: 2rem 0 3.5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-principal i {
+        display: none;
+    }
+
+    .nav-principal a {
+        margin: 0 1rem;
+    }
 }
 
 /*Nombre del sitio*/
@@ -174,16 +349,16 @@ header {
 }
 
 #nombre-pagina {
-    font-family:'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Medium';
     font-size: 3rem;
 }
 
 .seccion-arriba-nombre {
-    flex:1;
+    flex: 1;
 }
 
 .seccion-arriba-enlaces {
-    flex:1;
+    flex: 1;
     display: flex;
     justify-content: flex-end;
 }
@@ -221,14 +396,14 @@ header {
 .div-campo-orden-select {
     flex: 1;
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .todos-los-productos {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
-    align-items: flex-end; 
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .todos-los-productos p {
@@ -321,7 +496,7 @@ header {
 }
 
 .div-filtros input {
-    width: 12rem;
+    width: 7rem;
     height: 2rem;
     font-size: 1.5rem;
 }
@@ -363,13 +538,13 @@ footer {
     background-color: #f5f5f5;
     margin-top: 2rem;
 }
-  
+
 .div-footer {
     width: 75%;
     margin: 0 auto;
     display: flex;
 }
-  
+
 .contenedor-footer {
     display: flex;
     flex-direction: column;
@@ -377,59 +552,59 @@ footer {
     flex: 1;
     margin: 1rem;
 }
-  
+
 .contenedor-footer h3 {
     font-size: 2rem;
     margin-top: 1rem;
 }
-  
+
 .contenedor-footer img {
     margin-top: 1.5rem;
     width: 80%;
 }
-  
+
 .logo-footer {
     display: flex;
     align-items: center;
 }
-  
+
 .logo-footer img {
     height: 5rem;
     width: 6.5rem;
     margin-right: 1rem;
 }
-  
+
 #img-calidad {
     width: 50%;
 }
-  
+
 .logo-footer h1 {
     color: #01b0bf;
     font-size: 2.5rem;
 }
-  
+
 .texto-footer {
     width: 70%;
     font-size: 1.5rem;
 }
-  
+
 .texto-footer p {
     line-height: 2;
 }
-  
+
 .contenedor-footer h4 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
-  
+
 .enlaces-footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
-  
+
 .div-footer-abajo {
     background-color: black;
     height: 5rem;
@@ -437,27 +612,27 @@ footer {
     align-items: center;
     margin-top: 2.5rem;
 }
-  
+
 .div-footer-p {
     width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-  
-.div-footer-p p, .enlaces-footer-abajo a {
+
+.div-footer-p p,
+.enlaces-footer-abajo a {
     color: white;
     font-size: 1.3rem;
     align-items: center;
 }
-  
+
 .enlaces-footer-abajo {
     display: flex;
     align-items: center;
 
 }
-  
+
 .enlaces-footer-abajo a {
     margin-left: 2.5rem;
 }
-  

@@ -12,21 +12,25 @@ html {
 
 /*Globales*/
 
+/*El tipo de letra para todo el body de la pagina web*/
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
 }
 
+/*Para que las imagenes no se extiendan mas que el ancho del su respectivo contenedor*/
 img {
   max-width: 100%;
   display: block;
 }
 
+/*El tipo de letra para todos lod h1, h2 y h3 de la pagina web*/
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", self;
+  font-family: sans-serif;
 }
 
+/*El tamaño de letra de los h1 para los 3 tipos de medida*/
 h1 {
   font-size: 5rem;
 }
@@ -43,15 +47,18 @@ h1 {
   }
 }
 
+/*Tamaño de letra de los h2 de la pagina*/
 h2 {
   font-size: 3rem;
 }
 
+/*Tamaño de letra de los h3 de la pagina*/
 h3 {
   font-size: 3rem;
   margin: 0 0 0.5rem 0;
 }
 
+/*Quitar el subrayado, poner la letra en negro y dar tamaño de letra a todos los enlaces para los 3 tipos de medida*/
 a {
   text-decoration: none;
   color: #000;
@@ -64,14 +71,16 @@ a {
   }
 }
 
-/*Cabecera*/
+/*HEADER*/
 
 /*Parte de arriba*/
 
+/*Darle el color a todo el header*/
 header {
   background-color: white;
 }
 
+/*Estilos del div de arriba del todo, donde se registra o inicia sesion*/
 .div-arriba {
   width: 100%;
   background-color: #01b0bf;
@@ -80,6 +89,7 @@ header {
   align-items: center;
 }
 
+/*Estilos del div de arriba del todo, donde se registra o inicia sesion, pero un div hijo mas corto*/
 .div-arriba-dentro {
   height: 100%;
   width: 75%;
@@ -87,6 +97,7 @@ header {
   display: flex;
 }
 
+/*Estilos del div donde se situa el titulo h4 de la izquierda del todo*/
 .div-header-h4 {
   height: 100%;
   display: flex;
@@ -94,11 +105,13 @@ header {
   flex: 3;
 }
 
+/*Estilos del titulo h4 de la izquierda del todo*/
 .div-arriba h4 {
   color: white;
   font-size: 1.6rem;
 }
 
+/*Estilos del contendor donde van los enlaces de inicio de sesion y registrarse*/
 .sesion {
   display: flex;
   color: white;
@@ -106,6 +119,7 @@ header {
   flex: 1;
 }
 
+/*Estilos para cuando se accede a la pagina desde una pantalla mas pequeña, entre 768 y 1278px en horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
   
   .div-arriba-dentro {
@@ -121,6 +135,7 @@ header {
   }
 }
 
+/*Estilos para cuando se accede a la pagina desde una pantalla mas pequeña, de menos de 767px en horizontal*/
 @media (max-width:767px) {
 
   .div-arriba {
@@ -143,6 +158,7 @@ header {
   }
 }
 
+/*Estilos para los enlaces de iniciar sesion y registrarse*/
 .sesion a {
   color: white;
   margin: 1rem;
@@ -150,6 +166,7 @@ header {
 
 /*Logo y carro*/
 
+/*Estilos para el div donde estan el logo, el nombre y el carrito de la compra*/
 .imagen-titulo {
   width: 75%;
   margin: 0 auto;
@@ -157,30 +174,36 @@ header {
   align-items: center;
 }
 
+/*Estilos para el logo de la empresa*/
 .imagen-titulo img {
   height: 10rem;
   width: 12rem;
   margin-right: 1.5rem;
 }
 
+/*Dar color al titulo h1*/
 .imagen-titulo h1 {
   color: #01b0bf;
 }
 
+/*Estilos para el enlace de compra y el logo del carrito*/
 .carrito {
   margin-left: auto;
   color: #01b0bf;
 }
 
+/*Estilo para que, cuando se ponga el raton encima del logo del carrito, este se haga mas grande*/
 .carrito i:hover {
   font-size: 3rem;
 }
 
+/*Estilos para el enlace de tu compra*/
 .imagen-titulo a {
   font-size: 2rem;
   color: #01b0bf;
 }
 
+/*Estilos para ver el logo, el titulo h1 y el carrito diferente cuando la longitud de la pantalla sea de entre 768px y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
   .imagen-titulo {
     width: 80%;
@@ -190,6 +213,7 @@ header {
   }
 }
 
+/*Estilos para ver el logo, el titulo h1 y el carrito diferente cuando la longitud de la pantalla sea de menos de 767px*/
 @media (max-width:767px) {
   .imagen-titulo {
     width: 90%;
@@ -221,10 +245,12 @@ header {
 
 /*Enlaces de navegacion*/
 
+/*Dar separacion entre el logo y titulo, con respecto a los enlaces*/
 .contenedor-navegacion {
   padding-top: 1rem;
 }
 
+/*Estilos para el nav donde estan todos los enlaces*/
 .nav-principal {
   width: 75%;
   margin: 0 auto;
@@ -232,23 +258,28 @@ header {
   display: flex;
 }
 
+/*Estilos para los enlaces de dentro del nav*/
 .nav-principal a {
   margin-left: 3.5rem;
   color: #01b0bf;
 }
 
+/*Estilos para los logos situados a la derecha de cada enlace*/
 .nav-principal i {
   color: #01b0bf;
 }
 
+/*Hacer los enlaces mas grandes cuando el raton se queda parado encima de cada uno de ellos*/
 .nav-principal a:hover {
   font-size: 2rem;
 }
 
+/*Poner un borde que separe el header y los enlaces con el contenido de esta pagina en concreto*/
 .separador {
   border-bottom: 0.1rem solid #01b0bf;
 }
 
+/*Estilos para los enlaces cuando la longitud horizontal de la pantalla esta entre 768px y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
   .nav-principal {
     width: 80%;
@@ -264,6 +295,7 @@ header {
   }
 }
 
+/*Estilos para los enlaces cuando la longitud horizontal de la pantalla ees de 767px*/
 @media (max-width:767px) {
 
   .contenedor-navegacion {
@@ -289,21 +321,25 @@ header {
 
 /*Seccion inicio*/
 
+/*Disminuir y la longitud y dejar el div en medio de la pagina para que todos los hijos esten centrados en esta longitud. Div padre*/
 .seccion-inicio {
   width: 75%;
   margin: 0 auto;
 }
 
+/*Color del titulo h2*/
 .seccion-inicio h2 {
   color: #01b0bf;
 }
 
+/*Estilos del div padre donde estan las tres fotos*/
 .div-inicio {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1.5rem;
 }
 
+/*Estilos para el primer articulo. Se pone la imagen como fondo de pantalla para luego poder meter texto encima y se le da el espacio deseado*/
 .productos-inicio:nth-child(1) {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -316,6 +352,7 @@ header {
   flex-direction: column;
 }
 
+/*Enlace de navegacion situado en el interior del primer article se le dan todos los estilos CSS*/
 .texto-inicio-impresora {
   display: flex;
   background-color: #01b0bf;
@@ -330,17 +367,20 @@ header {
   align-items: center;
 }
 
+/*Estilos para los enlaces de navegacion del contendor padre*/
 .seccion-inicio a {
   font-size: 2.5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Estilos para el segundo article. Se le da el tamaño y la posicion deseada*/
 .productos-inicio:nth-child(2) {
   grid-column-start: 4;
   grid-column-end: 6;
   display: grid;
 }
 
+/*Se pone la imagen de fondo del segundo article y se le da posicion y tamaño*/
 .inicio-accesorios {
   background-image: url('../img/Imágenes_inicio/accesorios_3D.jpg');
   background-repeat: no-repeat;
@@ -351,6 +391,7 @@ header {
   flex-direction: column;
 }
 
+/*Enlace de navegacion situado en el interior del segundo article se le dan todos los estilos CSS*/
 .texto-inicio-accesorios {
   display: flex;
   background-color: #01b0bf;
@@ -365,6 +406,7 @@ header {
   align-items: center;
 }
 
+/*Se pone la imagen de fondo del tercer article y se le da posicion y tamaño*/
 .inicio-impresion3D {
   background-image: url('../img/Imágenes_inicio/impresion3D.jpg');
   background-repeat: no-repeat;
@@ -376,6 +418,7 @@ header {
   flex-direction: column;
 }
 
+/*Estilos para el tercer article. Se le da el tamaño y la posicion deseada*/
 .productos-inicio:nth-child(3) {
   grid-column-start: 1;
   grid-column-end: 6;
@@ -385,6 +428,7 @@ header {
   color: #01b0bf;
 }
 
+/*Posicion y tamaño de los tres article cuando la longitud horizontal de la pantalla es de entre 768 y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
 
   .seccion-inicio {
@@ -434,6 +478,7 @@ header {
   }
 }
 
+/*Posicion y tamaño de los tres article cuando la longitud horizontal de la pantalla es menor a 767px*/
 @media (max-width:767px) {
   .seccion-inicio {
     width: 90%;
@@ -491,6 +536,7 @@ header {
 
 /*Seccion mejoras*/
 
+/*Estilos para el contenedor padre donde van alojadas los 3 cuadrados con informacion extra*/
 .mejoras {
   width: 65%;
   margin: 0 auto;
@@ -498,6 +544,7 @@ header {
   justify-content: space-between;
 }
 
+/*Estilos para los 3 div donde van los elementos interiores (logo texto y titulo)*/
 .mejora {
   display: flex;
   margin-right: 3rem;
@@ -506,14 +553,17 @@ header {
   padding: 1rem;
 }
 
+/*Estilo para que, al poner encima el rato, se vea el borde oscuro y difuminado de cada contenedor*/
 .mejora:hover {
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
 }
 
+/*Quitar el margen del contenedor final para que esten los 3 div bien centrados*/
 .mejora:last-child {
   margin-right: 0;
 }
 
+/*Estilos para el contenedor de la izquierda, donde se situa el logo correspondiente a cada caja*/
 .mejora-izq {
   flex: 1;
   display: flex;
@@ -521,11 +571,13 @@ header {
   align-items: center;
 }
 
+/*Estilos para el propio logo*/
 .mejora-izq i {
   font-size: 5rem;
   color: #00b1bf;
 }
 
+/*Estilos para el div de la derecha, donde se encuentran el titulo h3 de la caja y el texto explicativo*/
 .mejora-der {
   flex: 3;
   display: flex;
@@ -533,11 +585,13 @@ header {
   align-items: center;
 }
 
+/*Estilos para los titulos h3*/
 .mejora-der h3 {
   font-size: 2.5rem;
   color: black;
 }
 
+/*Estilos para los textos explicativos; tamaño color y posicion*/
 .mejora-der p {
   font-size: 1.8rem;
   color: black;
@@ -545,6 +599,7 @@ header {
   margin-top: 1rem;
 }
 
+/*Estilos para el div de las mejoras y los elementos interiores cuando la longitud horzontal de la pantalla es de entre 768 y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
   .mejoras {
     width: 70%;
@@ -559,6 +614,7 @@ header {
   }
 }
 
+/*Estilos para el div de las mejoras y los elementos interiores cuando la longitud horzontal de la pantalla es de 767px*/
 @media (max-width:767px) {
   .mejoras {
     width: 80%;
@@ -573,36 +629,42 @@ header {
   }
 }
 
-/*Main*/
+/*MAIN*/
 
+/*Estilo para cambiar el color de todo el main*/
 .div-main {
   background-color: #f5f5f5;
 }
 
+/*Estilos para un div interior del main, para centrar los elementos en un espacio mas reducido*/
 .div-main-dentro {
   width: 75%;
   margin: 0 auto;
 }
 
+/*Cambiar el color del titulo h2 del main*/
 .div-main-dentro h2 {
   color: #01b0bf;
 }
 
+/*Estilos para la posicion de los 3 articulos del main*/
 .articulo-1, .articulo-2, .articulo-3 {
   display: flex;
   flex-direction: column;
 }
 
+/*Cambiar el color de los titulos h3 de cada articulo del main*/
 .articulo-1, .articulo-2, .articulo-3 h3 {
   color: #01b0bf;
 }
 
+/*Estilos para que no haya desbordamiento horizontal de los articulos de dentro del div*/
 .div-articulos {
   display: flex;
   overflow-x: auto;
-
 }
 
+/*Estilos para div especifico de cada producto del main*/
 .div-articulos-producto {
   flex-shrink: 0;
   width: 30rem; 
@@ -610,15 +672,18 @@ header {
   border: 0.1rem solid #01b0bf;
 }
 
+/*Poner margen a la derecha para centrar bien el div*/
 .div-articulos-producto:first-child {
   margin-left: 1rem; 
 }
 
+/*Tamaño para las imagenes de los productos*/
 .div-articulos-producto img {
   width: 100%; 
   height: 28rem;
 }
 
+/*Estilos para el div donde va el nombre, el precio y el input de cada producto*/
 .producto-descripcion {
   display: flex;
   flex-direction: column;
@@ -627,6 +692,7 @@ header {
   border-top: 0.3rem solid #01b0bf;
 }
 
+/*Estilos para el nombre de cada producto, el cual es un enlace para una vista mas detallada de los productos*/
 .producto-descripcion a {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -635,6 +701,7 @@ header {
   font-size: 2.4rem;
 }
 
+/*Estilos para el div donde estan el precio y el input de cada producto*/
 .producto-descripcion-input {
   margin-top: 0.5rem;
   display: flex;
@@ -642,6 +709,7 @@ header {
   padding-bottom: 1rem;
 }
 
+/*Estilos para el input agregar al carrito*/
 .producto-descripcion-input input {
   display: inline-block;
   height: 40px;
@@ -656,12 +724,14 @@ header {
   margin-left: 2rem;
 }
 
+/*Estilos para la etiqueta p donde esta escrito el precio*/
 .producto-descripcion-input p {
   color: #01b0bf;
   font-family: "Anton";
   font-size: 2.4rem;
 }
 
+/*Margen entre los articulos 1, 2 y 3*/
 .articulo-2, .articulo-3 {
   padding-top: 2.5rem;
 }
@@ -670,6 +740,7 @@ header {
   padding-bottom: 2rem;
 }
 
+/*Estilos para el contenedor del articulo 3, donde estan los dos precios*/
 .div-oferta {
   display: flex;
   flex-direction: column;
@@ -677,17 +748,83 @@ header {
   padding: 0;
 }
 
+/*Margen entre los dos precios de los productos del articulo 3*/
 .div-oferta p {
   margin: 0.5rem 0;
 }
 
+/*Estilos para tachar uno de los precios de los productos del articulo 3*/
 .tachado {
   text-decoration: line-through;
   text-decoration-color: red;
   text-decoration-thickness: 0.5rem;
 }
 
+/*Estilos para los 3 articulos cuando la longitud horizontal de la pantalla sea de entre 768 y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
+  .div-main-dentro {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .div-articulos {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .div-articulos-producto {
+    flex-shrink: 0;
+    width: 30rem; 
+    margin-right: 1rem; 
+    border: 0.1rem solid #01b0bf;
+  }
+  
+  .div-articulos-producto img {
+    width: 100%; 
+    height: 28rem;
+  }
+  
+  .producto-descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top: 0.3rem solid #01b0bf;
+  }
+  
+  .producto-descripcion a {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00b1bf;
+    font-family: "Protest Riot";
+    font-size: 2.4rem;
+  }
+  
+  .producto-descripcion-input {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  .producto-descripcion-input input {
+    display: inline-block;
+    height: 40px;
+    background-color: #00b1bf; 
+    color: white; 
+    border: none;
+    border-radius: 1rem; 
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-left: 2rem;
+  }
+  
+}
+
+/*Estilos para los 3 articulos cuando la longitud horizontal de la pantalla sea de entre 768 y 1278px*/
+@media (max-width:767px) {
   .div-main-dentro {
     width: 80%;
     margin: 0 auto;
@@ -751,6 +888,7 @@ header {
 
 /*Formulario*/
 
+/*Estilos para el div donde se situa el formulario. Se le da ina longitud horizontal inferior a otros divs de la pagina*/
 .formulario {
   width: 65%;
   margin: 0 auto;
@@ -758,6 +896,7 @@ header {
   margin-bottom: 2rem;
 }
 
+/*Estilos para el fieldset donde se situan los elementos del formulario*/
 .formulario-interior {
   background-color: #f5f5f5;
   border: 0.2rem solid #01b0bf; 
@@ -765,15 +904,18 @@ header {
   text-align: center;
 }
 
+/*Color y posicionamiento del titulo h2 del formulario*/
 .formulario-interior h2 {
   color: #01b0bf;
   margin: 0;
 }
 
+/*darle display flex al div donde se encuentran los elementos del formulario; por un lado el div de la foto, por otro el div de los input*/
 .div-catalogo {
   display: flex;
 }
 
+/*Estilos para el div donde se situal la foto de la izquierda del catalogo*/
 #foto-catalogo {
   flex: 1;
   display: flex;
@@ -781,6 +923,7 @@ header {
   align-items: center;
 }
 
+/*Estilos para darle la forma circular y el tamaño a la foto*/
 #foto-catalogo img {
   border-radius: 50%;
   width: 30rem; 
@@ -788,6 +931,7 @@ header {
   margin-right: 1.5rem;
 }
 
+/*Darle tamaño y posicion al div donde se encuentan los input del formulario*/
 #inputs-catalogo {
   flex: 2;
 }
@@ -798,18 +942,22 @@ header {
   font-size: 2rem;
 }
 
-.div-nombre-apellido, .div-email, .div-empresa, .div-comprador, .div-campo-uso, .div-info-extra, .div-condiciones {
+/*Estilos para todos los div donde se encuentean sus respectivos input*/
+.div-nombre-apellido, .div-email, .div-empresa, .div-comprador, .div-campo-uso, 
+.div-info-extra, .div-condiciones {
   margin-bottom: 2rem;
   display: flex;
   align-items: flex-start;
 }
 
+/*Estilos del div donde esta*/
 .div-comprador {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+/*Estilos para el div donde se encuentran los input de tipo radio*/
 .div-radios {
   width: 100%;
   display: flex;
@@ -817,56 +965,63 @@ header {
   
 }
 
-.div-radios-der {
-  flex: 1;
-  background-color: blue;
+/*Dar posicion a los div donde se encuentran el label y el radio, siendo uno en el lado izquierdo y otro en el derecho*/
+.div-radios-izq, .div-radios-der {
   display: flex;
-  justify-content: flex-start;
+  align-items: center; 
+  margin-right: 10rem;
 }
 
-.div-radios-izq {
-  flex: 1;
-  background-color: purple;
-  display: flex;
-  justify-content: flex-start;
+/*Dar posicion a las etiquetas de los input de tipo radio*/
+.campo-comprador-label {
+  margin-right:  -5rem;
 }
 
+/*Dar tamaño, color y posicion a los nombres de cada input*/
 label {
   font-size: 1.8rem;
   color: #01b0bf;
   margin-right: 0.5rem;
 }
 
+/*Dar posicion a la etiqueta donde pone el nombre del primer input del formulario*/
 #campo-nombre {
   margin-right: 6rem;
 }
 
+/*Margen del div de la empresa para no estar pegado a la foto*/
+.div-empresa {
+  margin-left: 0.5rem;
+}
+
+/*darle display flex al div del campo de uso*/
+.div-campo-uso {
+  display: flex;
+}
+
+/*Id del select del campo uso. Darle tamaño al input y a la letra*/
 input, #campo-uso {
   height: 2.5rem;
   width: 15rem;
   font-size: 1.5rem;
 }
 
-.div-empresa {
-  margin-left: 0.5rem;
-}
-
-.div-campo-uso {
-  display: flex;
-}
-
+/*Darle tamaño a la letra de dentro del input de las opciones*/
 #campo-uso option, textarea {
   font-size: 1.5rem;
 }
 
+/*Subrayar el nav que está en la parte de abajo del formulario, donde las condiciones*/
 .div-condiciones a {
   text-decoration: underline;
 }
 
+/*Darle margen al input de tipo checkbox con respecto a su label*/
 #aceptar-condiciones {
   margin-left: -5.5rem;
 }
 
+/*Darle otro tamaño al formulario cuando la longitud horizontal de la pantalla es inferior al un tamaño de entre 768 y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
   .formulario {
     width: 80%;
@@ -880,12 +1035,12 @@ input, #campo-uso {
   } 
 }
 
+/*Darle otro tamaño al formulario cuando la longitud horizontal de la pantalla es inferior a 767px*/
 @media (max-width:767px) {
   .formulario {
     width: 90%;
   }
 
-  
   .formulario-interior {
     background-color: #f5f5f5;
     border: 0.2rem solid #01b0bf; 
@@ -988,19 +1143,22 @@ input, #campo-uso {
   }
 }
 
-/*Footer*/
+/*FOOTER*/
 
+/*Darle u color de fondo gris y dejar margen con respecto al formulario*/
 footer {
   background-color: #f5f5f5;
   margin-top: 2rem;
 }
 
+/*Darle una longitud horizontal de 75% para centrar ahi los elementos del footer*/
 .div-footer {
   width: 75%;
   margin: 0 auto;
   display: flex;
 }
 
+/*Estilos para los tres contenedores del footer, donde esncuentran los enlaces y demas*/
 .contenedor-footer {
   display: flex;
   flex-direction: column;
@@ -1009,51 +1167,57 @@ footer {
   margin: 1rem;
 }
 
+/*Tamaño y posicion de los titulos h3 */
 .contenedor-footer h3 {
   font-size: 2rem;
   margin-top: 1rem;
 }
 
+/*Tamaño y posicion de las imagenes del footer*/
 .contenedor-footer img {
   margin-top: 1.5rem;
   width: 80%;
 }
 
+/*Estilos para el div donde se encuentra el logo de la empresa y el nombre*/
 .logo-footer {
   display: flex;
   align-items: center;
 }
 
+/*Tamaño y posicion de la imagen del logo de la empresa*/
 .logo-footer img {
   height: 5rem;
   width: 6.5rem;
   margin-right: 1rem;
 }
 
+/*Tamaño de la imagen de la foto que esta en el div de la derecha*/
 #img-calidad {
   width: 50%;
 }
 
+/*Color y tamaño del titulo h1 del footer con el nombre de la empresa*/
 .logo-footer h1 {
   color: #01b0bf;
   font-size: 2.5rem;
 }
 
+/*Tamaño del div de la izquierda dond eesta el texto, tamaño de letra del texto y separacion entre lineas*/
 .texto-footer {
   width: 70%;
   font-size: 1.5rem;
-}
-
-.texto-footer p {
   line-height: 2;
 }
 
+/*Tamaño de letra y posicion del titulo h4 del div de la izquierda del footer*/
 .contenedor-footer h4 {
   font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
+/*Estilos del nav donde estan los enlaces del footer*/
 .enlaces-footer {
   display: flex;
   flex-direction: column;
@@ -1061,6 +1225,7 @@ footer {
   margin-top: 1.5rem;
 }
 
+/*Estilos para el div donde esta la informacion de abajo del todo de la pagina*/
 .div-footer-abajo {
   background-color: black;
   height: 5rem;
@@ -1069,6 +1234,7 @@ footer {
   margin-top: 2.5rem;
 }
 
+/*Tamaño del div donde esta la informacion de los derechos y los dos enlaces*/
 .div-footer-p {
   width: 75%;
   margin: 0 auto;
@@ -1076,18 +1242,21 @@ footer {
   justify-content: space-between;
 }
 
+/*Estilos para la letra de la informacion de los derechos y de los dos enlaces*/
 .div-footer-p p, .enlaces-footer-abajo a {
   color: white;
   font-size: 1.3rem;
   align-items: center;
 }
 
+/*Estilos para el div donde estan los dos enlaces*/
 .enlaces-footer-abajo {
   display: flex;
   align-items: center;
 
 }
 
+/*Meter margen entre los dos enlaces*/
 .enlaces-footer-abajo a {
   margin-left: 2.5rem;
 }
