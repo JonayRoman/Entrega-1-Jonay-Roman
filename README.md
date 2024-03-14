@@ -3,6 +3,7 @@ Entrega 1 Ingeniería Web
 
 
 Repositorio GIT --> https://github.com/JonayRoman/Entrega-1-Jonay-Roman
+Github pages --> https://jonayroman.github.io/Entrega-1-Jonay-Roman/
 
 Se trata de la página web de una tienda de impresión 3D. En esta, se venden todo tipo de artículos relacionados con el tema; desde impresoras 3D,
 hasta impresiones hechas en la tienda.
