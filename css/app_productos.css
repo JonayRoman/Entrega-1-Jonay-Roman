@@ -277,7 +277,7 @@ header {
 
 /*Hacer los enlaces mas grandes cuando el raton se queda parado encima de cada uno de ellos*/
 .nav-principal a:hover {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 /*Poner un borde que separe el header y los enlaces con el contenido de esta pagina en concreto*/
