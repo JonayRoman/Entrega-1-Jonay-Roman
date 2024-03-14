@@ -362,8 +362,8 @@ header {
   margin: 0 auto;
   margin-top: 37rem;
   border: 0.1rem solid black; 
-  border-radius: 10px; 
-  padding: 10px;
+  border-radius: 1rem; 
+  padding: 1rem;
   align-items: center;
 }
 
@@ -712,7 +712,7 @@ header {
 /*Estilos para el input agregar al carrito*/
 .producto-descripcion-input input {
   display: inline-block;
-  height: 40px;
+  height: 4rem;
   background-color: #00b1bf; 
   color: white; 
   border: none;
@@ -809,7 +809,7 @@ header {
   
   .producto-descripcion-input input {
     display: inline-block;
-    height: 40px;
+    height: 4rem;
     background-color: #00b1bf; 
     color: white; 
     border: none;
@@ -872,7 +872,7 @@ header {
   
   .producto-descripcion-input input {
     display: inline-block;
-    height: 40px;
+    height: 4rem;
     background-color: #00b1bf; 
     color: white; 
     border: none;
@@ -1227,6 +1227,7 @@ footer {
   margin-top: 1.5rem;
 }
 
+/*Estilos de la zona gris clarita del footer cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
   .div-footer {
     width: 85%;
@@ -1251,6 +1252,7 @@ footer {
   }
 }
 
+/*Estilos de la zona gris clarita del footer cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
   .div-footer {
     width: 90%;

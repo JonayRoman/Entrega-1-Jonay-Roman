@@ -327,6 +327,7 @@ header {
 
 /*Nombre del sitio*/
 
+/*Estilos para la zona de fondo gris situada entre los enlaces principales y el contenido principal de la pagina*/
 .seccion-arriba {
     width: 100%;
     height: 10rem;
@@ -335,6 +336,7 @@ header {
     overflow: hidden;
 }
 
+/*Estilos para la zona de fondo gris situada entre los enlaces principales y el contenido principal de la pagina con un width mas reducido*/
 .seccion-arriba-centro {
     width: 75%;
     height: 100%;
@@ -343,21 +345,25 @@ header {
     align-items: center;
 }
 
+/*Fuente y tamalo del nombre de la pagina*/
 #nombre-pagina {
     font-family: 'Franklin Gothic Medium';
     font-size: 3rem;
 }
 
+/*Espacio para el nombre con respecto a los enlaces de la derecha*/
 .seccion-arriba-nombre {
     flex: 1;
 }
 
+/*Espacio para los enlaces de la derecha con respecto al nombre de la pagina*/
 .seccion-arriba-enlaces {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
+/*Tamaño y posicionamiento del nombre de la pagina y los enlaces cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .seccion-arriba-centro {
         width: 80%;
@@ -380,6 +386,7 @@ header {
     }
 }
 
+/*Tamaño y posicionamiento del nombre de la pagina y los enlaces cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .seccion-arriba-centro {
         width: 90%;
@@ -406,32 +413,40 @@ header {
     }
 }
 
-/*Main*/
+/*MAIN*/
 
+/*Descripcion de la pagina y orden de los productos*/
+
+/*Estilos para todos los elementos que estan dentro del main de la pagina*/
 .main-productos {
     width: 75%;
     margin: 0 auto;
     display: flex;
 }
 
+/*Espacio que se les da a los filtos y un borde de separacion a la derecha*/
 .filtros {
     flex: 30%;
     border-right: 0.2rem solid black;
 }
 
+/*Espacio que se le da a la seccion de los productos con respecto a los filtros*/
 .productos {
     flex: 70%;
 }
 
+/*Estilos del contenedor donde se encuentra la informacion de la pagina*/
 .descripcion {
     margin-left: 2.5rem;
     border-bottom: 0.1rem solid black;
 }
 
+/*Tamaño de letra de la descripcion*/
 .descripcion p {
     font-size: 2rem;
 }
 
+/*Estilos para el articulo donde se encuentra el input de ordenar y el texto donde esta escrito de que manera estan ordenados los productos*/
 .ordenar-productos {
     margin-top: 2rem;
     margin-left: 2.5rem;
@@ -440,12 +455,14 @@ header {
     border-bottom: 0.1rem solid black;
 }
 
+/*Estilos para el div donde se encuentra el input para decidir como ordenar los productos*/
 .div-campo-orden-select {
     flex: 1;
     display: flex;
     align-items: flex-start;
 }
 
+/*Estilos para el div donde se encuentra el texto que dice el orden que se ha escogido*/
 .todos-los-productos {
     flex: 1;
     display: flex;
@@ -453,14 +470,17 @@ header {
     align-items: flex-end;
 }
 
+/*Tamaño de la letra del texto que dice el orden que se ha escogido*/
 .todos-los-productos p {
     font-size: 1.5rem;
 }
 
+/*Altura que se le da al input para decidir como ordenar los productos*/
 #campo-orden {
     height: 50%;
 }
 
+/*Estilos de la descripcion y el modo de ordenacion cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .main-productos {
         width: 90%;
@@ -488,6 +508,7 @@ header {
     }
 }
 
+/*Estilos de la descripcion y el modo de ordenacion cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .main-productos {
         width: 90%;
@@ -513,6 +534,7 @@ header {
 
 /*Main-productos*/
 
+/*Estilos para el articulo donde se encuentran todos los productos*/
 .vista-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -520,15 +542,18 @@ header {
     margin-left: 2.5rem;
 }
 
+/*Tamaño para la imagen de cada producto*/
 .vista-productos img {
     height: 20rem;
     width: 100%;
 }
 
+/*Estilo para dar separacion entre un articulo y otro*/
 .producto-individual {
     margin-bottom: 0.5rem;
 }
 
+/*Estilos para el div donde se encuentra el nombre y el precio del producto*/
 .nombre-precio {
     display: flex;
     flex-direction: column;
@@ -537,19 +562,19 @@ header {
     margin-bottom: 1rem;
 }
 
+/*Estilos para el nombre del producto, el cual es un enlace*/
 .nombre-precio a {
     margin-top: 1.5rem;
     font-size: 2.4rem;
 }
 
+/*Estilos para situar bien el precio del producto*/
 .nombre-precio h4 {
     margin-top: 1.5rem;
-}
-
-#h4-precio {
     color: #01b0bf;
 }
 
+/*Estilos del div de los productos y de cada producto individual cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .vista-productos {
         display: grid;
@@ -570,6 +595,7 @@ header {
 
 }
 
+/*Estilos del div de los productos y de cada producto individual cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .vista-productos {
         display: grid;
@@ -591,11 +617,13 @@ header {
 
 /*main-cambio-pagina*/
 
+/*Estilos para el articulo donde estan los enlaces para moverse entre paginas con mas productos similares*/
 .cambio-pagina {
     display: flex;
     justify-content: flex-end;
 }
 
+/*Estilos para los div donde se encuentran los enlaces*/
 .cuadrado {
     border: 0.1rem solid black;
     width: 3.5rem;
@@ -606,14 +634,17 @@ header {
     margin-left: 1rem;
 }
 
+/*Color del primer div con el primer enlace para mostrar que es la pagina seleccionada*/
 #cuadrado-1 {
     background-color: #cec1c1;
 }
 
+/*Tamaño de letra de los enlaces*/
 .cuadrado a {
     font-size: 2rem;
 }
 
+/*Estilos de los enlaces cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .cambio-pagina {
         display: flex;
@@ -622,6 +653,7 @@ header {
     }
 }
 
+/*Estilos de los enlaces cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .cambio-pagina {
         display: flex;
@@ -632,41 +664,44 @@ header {
 
 /*main-filtros*/
 
+/*Tamaño de letra para los titulos de cada seccion de los filtros*/
 .filtros h4 {
     font-size: 1.8rem;
 }
 
+/*Estilos para el div donde se encuentran los elementos utilizados para filtrar*/
 .div-filtros {
     display: flex;
     align-items: flex-start;
+    font-size: 1.5rem;
+    width: 90%;
 }
 
+/*Estilos para la letra que va con la etiqueta p*/
 .div-filtros p {
     margin-top: 0;
     font-size: 1.5rem;
     margin-right: 2rem;
 }
 
+/*Estilos para los input de los filtros*/
 .div-filtros input {
     width: 7rem;
     height: 2rem;
     font-size: 1.5rem;
 }
 
+/*Margen entre la etiqueta p con el margen de precios y el input de tipo texto donde se escribe a mano el precio*/
 .input-texto {
     margin-right: 2rem;
 }
 
+/*Tamaño del input donde se escribe el nombre del producto*/
 #input-filtro-nombre {
     width: 22rem;
 }
 
-.div-filtros,
-#filtros-por-precio {
-    font-size: 1.5rem;
-    width: 90%;
-}
-
+/*Estilos para los elementos de las listas*/
 .div-filtros ul {
     list-style-type: none;
     padding: 0;
@@ -674,17 +709,19 @@ header {
     width: 100%;
 }
 
+/*Margen entre los li de la lista*/
 .div-filtros li {
     margin-bottom: 3.5rem;
-
 }
 
+/*Margen entre los elementos de la lista y el subelemento*/
 #impresoras-3D-tipos {
     margin-top: 2rem;
     padding-left: 4rem;
     font-size: 1.4rem;
 }
 
+/*Estilo para cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
 
     #filtros-por-precio {
@@ -773,6 +810,7 @@ footer {
     margin-top: 1.5rem;
 }
 
+/*Estilos de la zona gris clarita del footer cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .div-footer {
         width: 85%;
@@ -797,6 +835,7 @@ footer {
     }
 }
 
+/*Estilos de la zona gris clarita del footer cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .div-footer {
         width: 90%;

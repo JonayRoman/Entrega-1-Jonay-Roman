@@ -53,7 +53,7 @@ h2 {
     font-size: 3rem;
 }
 
-/*Tamaño de letra de los h3 de la pagina*/
+/*Tamaño de letra de los h3 de la pagina para dos medidas*/
 h3 {
     font-size: 2.8rem;
     margin: 0 0 0.5rem 0;
@@ -326,8 +326,9 @@ header {
     }
 }
 
-/*Nombre del producto*/
+/*NOMBRE DEL PRODUCTO Y ENLACES HACIA PAGINAS ANTERIORES*/
 
+/*Estilos para la seccion situada entre el nav y la foto junto con los datos de compra del producto. Aqui se situan el nombre del producto y los enlaces de vuelta a paginas anteriores*/
 .seccion-arriba {
     width: 100%;
     height: 10rem;
@@ -336,6 +337,7 @@ header {
     overflow: hidden;
 }
 
+/*Darle un tamaño mas reducido al width donde se encuentran el nombre del producto y los enlaces de vuelta a paginas anteriores*/
 .seccion-arriba-centro {
     width: 75%;
     height: 100%;
@@ -344,21 +346,25 @@ header {
     align-items: center;
 }
 
+/*Estilos para el nombre del producto. Se le cambia la fuente y el tamaño a la letra*/
 #nombre-producto {
     font-family: 'Franklin Gothic Medium';
     font-size: 3rem;
 }
 
+/*Se le da la posicion y el espacio al nombre del producto*/
 .seccion-arriba-nombre {
     flex: 1;
 }
 
+/*Se le da la posicion y el espacio a los enlaces de la derecha*/
 .seccion-arriba-enlaces {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
+/*Tamaño y posicion del nombre y los enlaces cuando la longitud horizontal de la pantalla es de entre 768 y 1278px*/
 @media (min-width:768px) and (max-width:1278px) {
     .seccion-arriba-centro {
         width: 80%;
@@ -380,6 +386,7 @@ header {
     }
 }
 
+/*Tamaño y posicion del nombre y los enlaces cuando la longitud horizontal de la pantalla es de 767px*/
 @media (max-width:767px) {
 
     .seccion-arriba {
@@ -402,23 +409,28 @@ header {
     }
 }
 
-/*Foto y datos iniciales*/
+/*FOTO Y DATOS INICIALES*/
+
+/*Estilos para el div donde se encuentra la imagen del producto y los datos de compra*/
 .producto-imagen-precio {
     width: 75%;
     margin: 0 auto;
     display: flex;
 }
 
+/*Estilos para el div donde se encuentra la imagen. Se le da espacio y tamaño*/
 .producto-imagen {
     flex: 40%;
     display: flex;
     justify-content: center;
 }
 
+/*Tamaño horizontal de la imagen del producto*/
 .producto-imagen img {
     width: 75%;
 }
 
+/*Estilos para el div donde se encuentra, los datos de compra del producto*/
 .producto-precio {
     flex: 60%;
     display: flex;
@@ -427,31 +439,37 @@ header {
     padding: 1.5rem;
 }
 
+/*Estilos para el nombre del producto*/
 .descripcion-producto h2 {
     margin-top: 0;
     color: #01b0bf;
 }
 
+/*Tamaño de letra para la breve descripcion del producto*/
 .descripcion-producto p {
     font-size: 2rem;
 }
 
+/*Escribir el texto de la garantia en negrita*/
 #garantia {
     font-weight: bold;
 }
 
+/*Estilos para el texto donde pone el precio del producto*/
 .precio-del-producto h3 {
     margin-bottom: 3rem;
     color: #01b0bf;
     font-size: 3.2rem;
 }
 
+/*Tamaño y posicion del div donde esta el boton y los input para elegir el stock*/
 .carrito {
     display: flex;
     height: 3.5rem;
     justify-content: center;
 }
 
+/*Estilos para todos los input del div carrito*/
 .carrito-input {
     height: 100%;
     width: 20%;
@@ -460,11 +478,13 @@ header {
     margin-right: 2rem;
 }
 
+/*Tamaño del div donde se encuentran los input para elegir el stock*/
 .mas-menos {
     display: flex;
     width: 20%;
 }
 
+/*Estilos de los input para elegir el stock*/
 .mas-meons-input {
     height: 100%;
     width: 40%;
@@ -474,6 +494,7 @@ header {
     color: #01b0bf;
 }
 
+/*Estilos del input para escribir a mano el stock*/
 .mas-menos-text {
     height: 100%;
     width: 40%;
@@ -482,6 +503,7 @@ header {
     text-align: center;
 }
 
+/*Estilos para cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .producto-imagen-precio {
         width: 80%;
@@ -517,6 +539,7 @@ header {
     }
 }
 
+/*Estilos para cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
     .producto-imagen-precio {
         width: 90%;
@@ -542,10 +565,11 @@ header {
     }
 }
 
-/*Main*/
+/*MAIN*/
 
 /*Descripcion del producto*/
 
+/*Estilos para el div en el que se encuentra la descripcion detallada del producto*/
 .seccion-descripcion-producto {
     width: 75%;
     margin: 0 auto;
@@ -554,18 +578,22 @@ header {
     padding-top: 2rem;
 }
 
+/*Color para el titulo h3, "descripcion del producto"*/
 .seccion-descripcion-producto h3 {
     color: #01b0bf;
 }
 
+/*Tamaño para la letra utilizada en la descripcion del producto*/
 .seccion-descripcion-producto p {
     font-size: 2rem;
 }
 
+/*Quitarle el margen del ultimo subtitulo de la descripcion*/
 .subtitulo {
     margin-bottom: 0;
 }
 
+/*Darle mas espacio a la zona en la que va escrita la descripcion del producto cuando la pantalla mide menos de 767px*/
 @media (max-width:767px) {
     .seccion-descripcion-producto {
         width: 90%;
@@ -574,6 +602,7 @@ header {
 
 /*Datos extra*/
 
+/*Estilos para el subtitulo h4  "lo que hay que sber de este producto"*/
 .datos-extra h4 {
     font-size: 2.5rem;
     color: #01b0bf;
@@ -581,30 +610,36 @@ header {
     margin-bottom: 1rem;
 }
 
+/*Estilo para el contenedor donde se aloja la lista y la foto del producto*/
 .datos-foto {
     display: flex;
 }
 
+/*Espacio que se le da al contenedor donde se encuentra la lista*/
 .lista-datos {
     flex: 60%;
 }
 
+/*Tamaño y posicion de la letra de la lista*/
 .lista-datos li {
     font-size: 2rem;
     margin-top: 2rem;
 }
 
+/*Estilos para el div donde se encuentra la foto del producto*/
 .datos-extra-foto {
     flex: 40%;
     display: flex;
     justify-content: center;
 }
 
+/*Tamaño de la imagen del producto*/
 .datos-extra-foto img {
     height: 100%;
     width: 60%;
 }
 
+/*Estilos de la lista cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
     .seccion-descripcion-producto {
         width: 80%;
@@ -627,6 +662,7 @@ header {
     }
 }
 
+/*Estilos de la lista cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
 
     .seccion-descripcion-producto {
@@ -646,42 +682,50 @@ header {
 
 /*Caracteristicas tablas*/
 
+/*Espacio que se le da al div donde se encuentran todas las tablas*/
 .caracteristicas-tablas {
     width: 75%;
     margin: 0 auto;
 }
 
+/*Color del titulo general de todas las tablas, "caracteristicas del producto"*/
 .caracteristicas-tablas h2 {
     color: #01b0bf;
 }
 
+/*Estilos para el contenedor donde estan las tablas, quedandose fuera el titulo h2*/
 .tablas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 2rem;
 }
 
+/*Articulo para dar los mismos estilos a cada tabla*/
 .articulo-tabla {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/*Color para los titulos individuales de cada tabla*/
 .articulo-tabla h3 {
     color: #01b0bf;
 }
 
+/*Estilos para la etiqueta table, los mismos para todas las tablas*/
 .tabla {
     margin-top: 1rem;
     width: 70%;
     border-collapse: collapse;
 }
 
+/*Estilos para la etiqueta tr de cada tabla*/
 .tabla tr {
     height: 4.5rem;
     font-size: 1.8rem;
 }
 
+/*Estilos para la etiqueta td de cada tabla*/
 .tabla td {
     margin: 0;
     padding: 0;
@@ -691,18 +735,22 @@ header {
     /*NO VAAAAAAAAAAAAAAAA*/
 }
 
+/*Dar color a las filas impares de cada tabla*/
 .fila-oscura {
     background-color: rgb(146, 140, 140);
 }
 
+/*Dar color a las filas pares de cada tabla*/
 .fila-clara {
     background-color: #ddd8d8;
 }
 
+/*Dar margen al titulo de la ultima tabla*/
 #cama-caliente {
     margin-top: 2rem;
 }
 
+/*Estilos para el div donde se encuentra la imagen del producto*/
 .div-imagen-tabla {
     display: flex;
     justify-content: center;
@@ -710,10 +758,12 @@ header {
     width: 70%;
 }
 
+/*Tamaño vertical para la imagen del producto*/
 .div-imagen-tabla img {
     height: 90%;
 }
 
+/*Estilos de la zona de las tablas cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
 @media (min-width:768px) and (max-width:1278px) {
 
     .caracteristicas-tablas {
@@ -734,6 +784,7 @@ header {
     }
 }
 
+/*Estilos de la zona de las tablas cuando la pantalla mide menos de 767px de longitud horizontal*/
 @media (max-width:767px) {
 
     .caracteristicas-tablas {
@@ -831,6 +882,7 @@ footer {
     margin-top: 1.5rem;
   }
   
+  /*Estilos de la zona gris clarita del footer cuando la pantalla mide entre 768 y 1278px de longitud horizontal*/
   @media (min-width:768px) and (max-width:1278px) {
     .div-footer {
       width: 85%;
@@ -855,6 +907,7 @@ footer {
     }
   }
   
+  /*Estilos de la zona gris clarita del footer cuando la pantalla mide menos de 767px de longitud horizontal*/
   @media (max-width:767px) {
     .div-footer {
       width: 90%;
