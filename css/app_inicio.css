@@ -458,10 +458,6 @@ header {
   }
   
   .inicio-impresion3D {
-    background-image: url('../img/Imágenes_inicio/impresion3D.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     height: 26.5rem;
     margin-top: 1.5rem;
     display: flex;
@@ -473,8 +469,6 @@ header {
     grid-column-end: 6;
     display: grid;
     margin-top: 0;
-    font-size: 2rem;
-    color: #01b0bf;
   }
 }
 
@@ -507,10 +501,6 @@ header {
   }
   
   .inicio-impresion3D {
-    background-image: url('../img/Imágenes_inicio/impresion3D.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     height: 33rem;
     margin-top: 0;
     display: flex;
@@ -808,14 +798,6 @@ header {
   }
   
   .producto-descripcion-input input {
-    display: inline-block;
-    height: 4rem;
-    background-color: #00b1bf; 
-    color: white; 
-    border: none;
-    border-radius: 1rem; 
-    cursor: pointer;
-    text-align: center;
     font-size: 1.6rem;
     line-height: 1.2;
     margin-left: 2rem;
@@ -871,14 +853,6 @@ header {
   }
   
   .producto-descripcion-input input {
-    display: inline-block;
-    height: 4rem;
-    background-color: #00b1bf; 
-    color: white; 
-    border: none;
-    border-radius: 1rem; 
-    cursor: pointer;
-    text-align: center;
     font-size: 1.6rem;
     line-height: 1.2;
     margin-left: 2rem;

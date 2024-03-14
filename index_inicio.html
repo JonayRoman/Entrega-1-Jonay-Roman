@@ -742,7 +742,7 @@
                             <!--Contenedor donde se encuentra el input que marca si ha comprado antes alguna vez-->
                             <div class="div-comprador">
 
-                                <label class="label-comprador" for="campo-comprador">
+                                <label>
                                     *¿Has comprado anteriormente algún producto en Román's Print?
                                 </label>
 
@@ -752,8 +752,8 @@
                                     <!--Contenedor donde se encuentra el radio button de la izquierda-->
                                     <div class="div-radios-izq">
 
-                                        <label class="campo-comprador-label" for="campo-comprador">Si</label>
-                                        <input class="campo-comprador-input" type="radio" name="campo-comprador"
+                                        <label class="campo-comprador-label" for="si">Si</label>
+                                        <input id="si" class="campo-comprador-input" type="radio" name="campo-comprador"
                                             value="si" checked="checked">
 
                                     </div>
@@ -761,8 +761,8 @@
                                     <!--Contenedor donde se encuentra el radio button de la derecha-->
                                     <div class="div-radios-der">
 
-                                        <label class="campo-comprador-label" for="campo-comprador">No</label>
-                                        <input id="id-input-der" class="campo-comprador-input" type="radio"
+                                        <label class="campo-comprador-label" for="no">No</label>
+                                        <input id="no" class="campo-comprador-input" type="radio"
                                             name="campo-comprador" value="no">
                                     </div>
 
@@ -779,7 +779,7 @@
                                 <div class="div-campo-uso-select">
 
                                     <select id="campo-uso" name="uso">
-                                        <option value="personal" selected="mayor_18">Un uso personal</option>
+                                        <option value="personal" selected>Un uso personal</option>
                                         <option value="laboral">Un uso laboral</option>
                                         <option value="educativo">Un uso educativo</option>
                                     </select>
@@ -791,8 +791,8 @@
                             <!--Contenedor donde se encuentra la informacion extra que se quiera poner-->
                             <div class="div-info-extra">
 
-                                <label for="campo-info">Información adicional:</label><br>
-                                <textarea name="campo-info" cols="42" rows="10">Escribe aquí todas las dudas o preguntas
+                                <label for="campo-info">Información adicional:</label>
+                                <textarea id="campo-info" name="campo-info" cols="42" rows="10">Escribe aquí todas las dudas o preguntas
                                 </textarea>
 
                             </div>
