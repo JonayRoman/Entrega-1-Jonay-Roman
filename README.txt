@@ -1,7 +1,6 @@
 # Entrega-1-Jonay-Roman
 Entrega 1 Ingeniería Web
 
-
 Repositorio GIT --> https://github.com/JonayRoman/Entrega-1-Jonay-Roman
 Github pages --> https://jonayroman.github.io/Entrega-1-Jonay-Roman/
 El video explicativo se ha compartido por Drive.
@@ -50,6 +49,7 @@ temas de HTML.
 apuntes de Alud para temas de CSS.
 
 *Extra: Videos tutoriales de Youtube.
+
 
 
 
