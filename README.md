@@ -1,16 +1,16 @@
 # Entrega-1-Jonay-Roman
 Entrega 1 Ingeniería Web
 
-
 Repositorio GIT --> https://github.com/JonayRoman/Entrega-1-Jonay-Roman
 Github pages --> https://jonayroman.github.io/Entrega-1-Jonay-Roman/
+El video explicativo se ha compartido por Drive.
 
 Se trata de la página web de una tienda de impresión 3D. En esta, se venden todo tipo de artículos relacionados con el tema; desde impresoras 3D,
 hasta impresiones hechas en la tienda.
 
-El proyecto consta de cos carpetas y tres archivos .html
+El proyecto consta de dos carpetas y tres archivos .html
 
-index_inicio.html
+index.html
 
 Se trata del archivo HTML de la pagina de inicio. Está asociado con un arcivo CSS para darle estilos a la página. Se encuentra en la carpeta
 css y se llama app_inicio.css
@@ -49,7 +49,6 @@ temas de HTML.
 apuntes de Alud para temas de CSS.
 
 *Extra: Videos tutoriales de Youtube.
-
 
 
 
